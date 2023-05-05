@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h1>Kalorien rechner</h1>
+            <article>
+                <h2>Körpergröße</h2>
+                <input id="größe" name="größe" type="number" placeholder="z.B. 188cm">
+            </article>
+            <article>
+                <h2>Alter</h2>
+                <input id="alter" type="number" placeholder="z.B. 18">
+            </article>
+            <article>
+                <h2>Gewicht</h2>
+                <input id="gewicht" type="number" placeholder="z.B. 95kg">
+            </article>
+            <article>
+                <h2>Körperbau</h2>
+                <input id="weiblich" type="radio" name="geschlecht" checked>
+                <label for="weiblich">Weiblich</label>
+                <input id="männlich" type="radio" name="geschlecht">
+                <label for="männlich">Männlich</label>
+            </article>
+            <article>
+                <h2>Arbeits- und Freizeitaktivität</h2>
+                <select id="aktivität">
+                    <option value="0.95">Schlafen</option>
+                    <option value="1.2">Nur Sitzen oder Liegen</option>
+                    <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                    <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                    <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+                    <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+                </select>
+            </article>
+            <input onclick="calculate(); return false" type="submit" class="btn" value="Submit">
+            <table>
+                <tr>
+                    <th>Placeholder</th>
+                    <td>kcal</td>
+                    <td>kJ</td>
+                </tr>
+                <tr>
+                    <th>Grundumsatz</th>
+                    <td class="grundKcal"></td>
+                    <td class="grundKj"></td>
+                </tr>
+                <tr>
+                    <th>Gesamtumsatz</th>
+                    <td class="gesamtKcal"></td>
+                    <td class="gesamtKj"></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>
