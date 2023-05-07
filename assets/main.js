@@ -2,7 +2,7 @@ function calculate() {
     const größe = Number(document.getElementById("größe").value);
     const alter = Number(document.getElementById("alter").value);
     const gewicht = Number(document.getElementById("gewicht").value);
-
+    console.log(gewicht);
     const geschlecht = document.getElementById("männlich").checked ? "männlich" : "weiblich";
         
     let aktivität = Number(document.getElementById("aktivität").value);

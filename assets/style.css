@@ -1,0 +1,105 @@
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsb;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 0.3rem;
+    border-radius: 5px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+h2,th, td {
+    font-size: 2rem;
+}
+.last-p {
+    font-size: 1.5rem;
+    width: 50%;
+}
+body,main, html {
+    margin-bottom: 0;
+}
+
+main {
+    background: linear-gradient(400deg,
+    rgba(14, 106, 94, 0.778),
+    rgba(28, 14, 106, 0.789));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+form {
+    box-shadow: black 0px 0px 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem 4rem 0rem;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 0.7rem;
+}
+input[type="radio"] {
+    transform: scale(2);
+    accent-color:rgba(14, 106, 94, 0.778);
+}
+label {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.werte {
+    display: flex;
+    justify-content: space-around;
+}
+
+.aktiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.körperbau {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+select {
+    height: 3rem;
+    width: 50%;
+}
+select option {
+    max-width: 50%;
+}
+
+input[type="submit"] {
+    width: 20%;
+    height: 4rem;
+    background-color: rgba(14, 106, 94, 0.778);
+    align-self: center;
+}
+form p {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 40vw;
+    margin-top: 2rem;
+}
